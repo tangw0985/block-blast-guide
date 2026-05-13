@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Block Blast 方块爆破游戏攻略 - 提供入门指南、进阶技巧、每日挑战解法和关卡攻略，助你轻松通关！">
+    <meta name="keywords" content="Block Blast, 方块爆破, 游戏攻略, 消除游戏, 拼图游戏, 通关技巧">
+    <meta name="author" content="Block Blast 攻略站">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Block Blast 方块爆破 - 游戏攻略网站">
+    <meta property="og:description" content="最全面的 Block Blast 攻略指南，帮助你快速提升游戏技巧">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Block Blast 方块爆破 - 游戏攻略网站">
+
+    <title>Block Blast 方块爆破 - 游戏攻略网站</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 结构化数据 - 网站信息 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Block Blast 攻略站",
+        "url": "https://你的域名.com",
+        "description": "Block Blast 方块爆破游戏的完整攻略指南，提供技巧、每日挑战、关卡攻略和下载资源",
+        "inLanguage": "zh-CN",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://你的域名.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- 结构化数据 - 组织信息 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Block Blast 攻略站",
+        "url": "https://你的域名.com",
+        "logo": "https://你的域名.com/images/logo.png",
+        "description": "专注于 Block Blast 游戏攻略的专业网站"
+    }
+    </script>
+
+    <!-- 结构化数据 - 面包屑导航 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://你的域名.com"
+        }]
+    }
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <h1 class="logo">🎮 Block Blast 攻略</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active" data-i18n="nav.home">首页</a></li>
+                <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                <li><a href="download.html" data-i18n="nav.download">资源下载</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="切换语言">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主横幅 -->
+    <section class="hero">
+        <!-- 漂浮方块装饰 -->
+        <div class="hero-blocks">
+            <div class="floating-block"></div>
+            <div class="floating-block"></div>
+            <div class="floating-block"></div>
+            <div class="floating-block"></div>
+            <div class="floating-block"></div>
+            <div class="floating-block"></div>
+        </div>
+
+        <div class="container">
+            <h2 class="hero-title" data-i18n="hero.title">Block Blast! 方块爆破</h2>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">掌握技巧，冲击高分榜！最全面的攻略指南</p>
+            <div class="hero-buttons">
+                <a href="tips.html" class="btn btn-primary" data-i18n="hero.startLearning">开始学习</a>
+                <a href="download.html"
+                   class="btn btn-secondary"
+                   data-affiliate="homepage-download"
+                   data-affiliate-name="首页下载按钮"
+                   data-i18n="hero.downloadGame">下载游戏</a>
+            </div>
+
+            <!-- 中央展示棋盘动画 -->
+            <div class="hero-showcase">
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled"></div>
+                <div class="hero-cell filled"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled-2"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell"></div>
+
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled-3"></div>
+                <div class="hero-cell filled-3"></div>
+                <div class="hero-cell filled-2"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled-4"></div>
+
+                <div class="hero-cell filled-4"></div>
+                <div class="hero-cell filled-4"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled-3"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled"></div>
+                <div class="hero-cell filled-4"></div>
+
+                <div class="hero-cell"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled-2"></div>
+                <div class="hero-cell filled-2"></div>
+                <div class="hero-cell"></div>
+                <div class="hero-cell filled"></div>
+                <div class="hero-cell filled"></div>
+                <div class="hero-cell"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 左侧主内容 -->
+                <div class="main-column">
+                    <!-- 游戏简介 -->
+                    <section class="section game-intro">
+                        <h2 class="section-title" data-i18n="intro.title">🎯 游戏简介</h2>
+                        <div class="content-card">
+                            <p data-i18n="intro.description">Block Blast（方块爆破）是一款风靡全球的方块消除益智游戏。玩家需要将不同形状的方块放置在 8x8 的棋盘上，通过填满整行或整列来消除方块，获得分数。游戏简单易学，但想要获得高分需要策略和技巧。</p>
+                            <div class="download-links">
+                                <a href="download.html" class="download-btn app-store">
+                                    <span class="icon">📱</span>
+                                    <span data-i18n="intro.appStore">App Store 下载</span>
+                                </a>
+                                <a href="download.html" class="download-btn google-play">
+                                    <span class="icon">🤖</span>
+                                    <span data-i18n="intro.googlePlay">Google Play 下载</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 攻略分类 -->
+                    <section class="section guide-categories">
+                        <h2 class="section-title" data-i18n="categories.title">📚 攻略分类</h2>
+                        <div class="category-grid">
+                            <a href="tips.html" class="category-card">
+                                <div class="category-icon">💡</div>
+                                <h3 data-i18n="categories.beginnerGuide">入门指南</h3>
+                                <p data-i18n="categories.beginnerDesc">从零开始，快速上手游戏基础操作</p>
+                            </a>
+                            <a href="tips.html" class="category-card">
+                                <div class="category-icon">🚀</div>
+                                <h3 data-i18n="categories.advancedTips">进阶技巧</h3>
+                                <p data-i18n="categories.advancedDesc">高手必备，提升分数的核心策略</p>
+                            </a>
+                            <a href="daily.html" class="category-card">
+                                <div class="category-icon">📅</div>
+                                <h3 data-i18n="categories.dailyChallenge">每日挑战</h3>
+                                <p data-i18n="categories.dailyDesc">每天更新，最新挑战的详细解法</p>
+                            </a>
+                            <a href="levels.html" class="category-card">
+                                <div class="category-icon">🎯</div>
+                                <h3 data-i18n="categories.levelGuide">关卡攻略</h3>
+                                <p data-i18n="categories.levelDesc">分级攻略，帮你突破每个难关</p>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- 最新攻略 -->
+                    <section class="section latest-guides">
+                        <h2 class="section-title" data-i18n="latest.title">🆕 最新攻略</h2>
+                        <div class="guide-list">
+                            <article class="guide-item">
+                                <div class="guide-meta">
+                                    <span class="guide-date">2026-05-13</span>
+                                    <span class="guide-tag tag-advanced" data-i18n="tags.advanced">进阶</span>
+                                </div>
+                                <h3 class="guide-title">
+                                    <a href="tips.html" data-i18n="latest.article1">棋盘清理的黄金法则：如何避免死角</a>
+                                </h3>
+                                <p class="guide-excerpt" data-i18n="latest.excerpt1">掌握这个技巧，让你的棋盘始终保持最佳状态，避免因布局不当导致游戏提前结束...</p>
+                            </article>
+                            <article class="guide-item">
+                                <div class="guide-meta">
+                                    <span class="guide-date">2026-05-12</span>
+                                    <span class="guide-tag tag-daily" data-i18n="tags.daily">每日挑战</span>
+                                </div>
+                                <h3 class="guide-title">
+                                    <a href="daily.html" data-i18n="latest.article2">5月12日每日挑战完美通关攻略</a>
+                                </h3>
+                                <p class="guide-excerpt" data-i18n="latest.excerpt2">今日挑战难度较高，本文提供详细的步骤解析和关键技巧...</p>
+                            </article>
+                            <article class="guide-item">
+                                <div class="guide-meta">
+                                    <span class="guide-date">2026-05-11</span>
+                                    <span class="guide-tag tag-beginner" data-i18n="tags.beginner">入门</span>
+                                </div>
+                                <h3 class="guide-title">
+                                    <a href="tips.html" data-i18n="latest.article3">新手必看：Block Blast 基础操作指南</a>
+                                </h3>
+                                <p class="guide-excerpt" data-i18n="latest.excerpt3">刚开始玩 Block Blast？这篇文章将帮助你快速了解游戏的基本规则和操作...</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- 热门推荐 -->
+                    <section class="section popular-guides">
+                        <h2 class="section-title" data-i18n="popular.title">🔥 热门推荐</h2>
+                        <div class="popular-grid">
+                            <div class="popular-card">
+                                <div class="popular-rank">1</div>
+                                <div class="popular-content">
+                                    <h4><a href="tips.html" data-i18n="popular.item1">连击技巧：如何实现多重消除</a></h4>
+                                    <span class="popular-views">👁️ 15,234</span>
+                                </div>
+                            </div>
+                            <div class="popular-card">
+                                <div class="popular-rank">2</div>
+                                <div class="popular-content">
+                                    <h4><a href="levels.html" data-i18n="popular.item2">困难关卡通关秘籍</a></h4>
+                                    <span class="popular-views">👁️ 12,891</span>
+                                </div>
+                            </div>
+                            <div class="popular-card">
+                                <div class="popular-rank">3</div>
+                                <div class="popular-content">
+                                    <h4><a href="tips.html" data-i18n="popular.item3">高分策略：突破10000分的方法</a></h4>
+                                    <span class="popular-views">👁️ 10,567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- 右侧边栏 -->
+                <aside class="sidebar">
+                    <!-- 广告位 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">精彩游戏推荐</p>
+                        <small data-i18n="ad.note">AdSense 广告位</small>
+                    </div>
+
+                    <!-- 快速链接 -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title" data-i18n="sidebar.quickLinks">快速链接</h3>
+                        <ul class="quick-links">
+                            <li><a href="tips.html" data-i18n="sidebar.allTips">所有技巧</a></li>
+                            <li><a href="daily.html" data-i18n="sidebar.todayChallenge">今日挑战</a></li>
+                            <li><a href="levels.html" data-i18n="sidebar.levelList">关卡列表</a></li>
+                            <li><a href="download.html" data-i18n="sidebar.download">下载游戏</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 广告位2 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">热门游戏推荐</p>
+                        <small data-i18n="ad.note">AdSense 广告位</small>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.about">关于我们</h4>
+                    <p data-i18n="footer.aboutText">Block Blast 攻略站致力于为全球玩家提供最全面、最实用的游戏攻略和技巧指导。</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">快速链接</h4>
+                    <ul>
+                        <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                        <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                        <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">联系我们</h4>
+                    <p data-i18n="footer.contactText">有问题或建议？欢迎联系我们！</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Block Blast 攻略站 | <span data-i18n="footer.rights">保留所有权利</span></p>
+                <!-- Google Analytics 占位 -->
+                <div class="analytics-placeholder">
+                    <small data-i18n="footer.analytics">访客统计（Google Analytics 接入位置）</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/affiliate.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

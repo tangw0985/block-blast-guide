@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Block Blast 进阶技巧攻略 - 提供10+条实用技巧，帮助你快速提升游戏水平，冲击高分榜">
+    <meta name="keywords" content="Block Blast技巧, 方块爆破攻略, 高分技巧, 游戏策略">
+    <title>技巧攻略 - Block Blast 方块爆破</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 结构化数据 - 面包屑导航 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://你的域名.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "技巧攻略",
+            "item": "https://你的域名.com/tips.html"
+        }]
+    }
+    </script>
+
+    <!-- 结构化数据 - 文章列表 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Block Blast 技巧攻略",
+        "description": "12条实用游戏技巧，从初级到高级",
+        "itemListElement": [
+            {
+                "@type": "HowTo",
+                "position": 1,
+                "name": "棋盘清理的黄金法则",
+                "description": "保持棋盘平整性，避免不规则布局"
+            },
+            {
+                "@type": "HowTo",
+                "position": 2,
+                "name": "预留消除空间策略",
+                "description": "同时准备2-3行或列接近完成的状态"
+            },
+            {
+                "@type": "HowTo",
+                "position": 3,
+                "name": "大方块优先原则",
+                "description": "优先放置大方块，小方块用于填补缝隙"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <h1 class="logo">🎮 Block Blast 攻略</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                <li><a href="tips.html" class="active" data-i18n="nav.tips">技巧攻略</a></li>
+                <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                <li><a href="download.html" data-i18n="nav.download">资源下载</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="切换语言">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="tips.pageTitle">💡 技巧攻略</h1>
+            <p class="page-subtitle" data-i18n="tips.pageSubtitle">掌握这些技巧，让你的游戏水平突飞猛进</p>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 左侧主内容 -->
+                <div class="main-column">
+                    <!-- 技巧列表 -->
+                    <div class="tips-container">
+                        <!-- 技巧1 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip1.title">1. 棋盘清理的黄金法则</h2>
+                                <span class="tip-level level-beginner" data-i18n="tips.level.beginner">初级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip1.scenario">游戏全程，特别是棋盘开始变得拥挤时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip1.step1">始终保持棋盘的平整性，避免出现"高山低谷"的不规则布局</li>
+                                        <li data-i18n="tips.tip1.step2">优先填充边角位置，这些位置最容易形成死角</li>
+                                        <li data-i18n="tips.tip1.step3">每放置3-4个方块后，检查是否有接近完成的行或列，及时消除</li>
+                                        <li data-i18n="tips.tip1.step4">不要让任何一行或一列的空格数超过3个，否则难以填满</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧2 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip2.title">2. 预留消除空间策略</h2>
+                                <span class="tip-level level-intermediate" data-i18n="tips.level.intermediate">中级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip2.scenario">中后期游戏，棋盘空间紧张时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip2.step1">同时准备2-3行或2-3列接近完成的状态（只差1-2个格子）</li>
+                                        <li data-i18n="tips.tip2.step2">当棋盘过于拥挤时，可以快速填满这些预留的行列</li>
+                                        <li data-i18n="tips.tip2.step3">消除后立即获得大量空间，为新方块腾出位置</li>
+                                        <li data-i18n="tips.tip2.step4">这个策略可以有效延长游戏时间，避免提前结束</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧3 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip3.title">3. 大方块优先原则</h2>
+                                <span class="tip-level level-beginner" data-i18n="tips.level.beginner">初级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip3.scenario">每次获得新的3个方块时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip3.step1">观察3个方块，识别哪个占用格子最多</li>
+                                        <li data-i18n="tips.tip3.step2">优先放置大方块，因为它们对位置要求更严格</li>
+                                        <li data-i18n="tips.tip3.step3">小方块（1-2格）更灵活，可以用来填补缝隙</li>
+                                        <li data-i18n="tips.tip3.step4">如果大方块无法放置，说明棋盘布局有问题，需要调整策略</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧4 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip4.title">4. 连击与多重消除技巧</h2>
+                                <span class="tip-level level-advanced" data-i18n="tips.level.advanced">高级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip4.scenario">追求高分时，或需要快速清理棋盘时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip4.step1">规划方块放置位置，使其能同时完成多行和多列</li>
+                                        <li data-i18n="tips.tip4.step2">例如：在行列交叉点放置方块，可能同时消除横向和纵向</li>
+                                        <li data-i18n="tips.tip4.step3">连续消除会获得额外的分数加成，倍数递增</li>
+                                        <li data-i18n="tips.tip4.step4">最理想的情况是一次放置消除2-3行/列，分数暴涨</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧5 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip5.title">5. 方块形状识别与应对</h2>
+                                <span class="tip-level level-intermediate" data-i18n="tips.level.intermediate">中级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip5.scenario">面对特殊形状方块（L型、T型、Z型等）时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip5.step1"><strong>直线型（I型）：</strong>最好用于填满接近完成的行或列</li>
+                                        <li data-i18n="tips.tip5.step2"><strong>L型方块：</strong>适合放在边角位置，或用于填充不规则空间</li>
+                                        <li data-i18n="tips.tip5.step3"><strong>T型方块：</strong>可以同时填充横向和纵向空间，非常灵活</li>
+                                        <li data-i18n="tips.tip5.step4"><strong>方形（O型）：</strong>最稳定的方块，适合填充中心区域</li>
+                                        <li data-i18n="tips.tip5.step5">熟悉每种形状的特点后，可以提前规划棋盘布局</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧6 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip6.title">6. 边角优先填充法</h2>
+                                <span class="tip-level level-beginner" data-i18n="tips.level.beginner">初级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip6.scenario">游戏初期和中期，棋盘还有较多空间时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip6.step1">四个角落是最容易形成死角的位置，优先填充</li>
+                                        <li data-i18n="tips.tip6.step2">边缘位置次之，因为它们只有三个方向可以扩展</li>
+                                        <li data-i18n="tips.tip6.step3">中心区域最灵活，留到最后处理</li>
+                                        <li data-i18n="tips.tip6.step4">使用 L 型方块最适合填充角落</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧7 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip7.title">7. 对称布局策略</h2>
+                                <span class="tip-level level-intermediate" data-i18n="tips.level.intermediate">中级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip7.scenario">追求稳定高分，避免出现不可控局面</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip7.step1">尽量保持棋盘左右或上下对称的布局</li>
+                                        <li data-i18n="tips.tip7.step2">对称布局更容易预测和规划后续步骤</li>
+                                        <li data-i18n="tips.tip7.step3">当一侧出现空缺时，另一侧也保持相似的空缺</li>
+                                        <li data-i18n="tips.tip7.step4">这样可以确保任何形状的方块都有对应的放置位置</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧8 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip8.title">8. 紧急救场技巧</h2>
+                                <span class="tip-level level-advanced" data-i18n="tips.level.advanced">高级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip8.scenario">棋盘已经非常拥挤，即将无法放置方块时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip8.step1">立即检查是否有接近完成的行或列（只差1-2格）</li>
+                                        <li data-i18n="tips.tip8.step2">优先使用小方块填满这些行列，快速清理空间</li>
+                                        <li data-i18n="tips.tip8.step3">如果没有接近完成的，寻找能同时推进多行/列的位置</li>
+                                        <li data-i18n="tips.tip8.step4">最后手段：牺牲部分区域，集中清理一侧</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧9 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip9.title">9. 分数倍增技巧</h2>
+                                <span class="tip-level level-advanced" data-i18n="tips.level.advanced">高级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip9.scenario">冲击高分榜，追求单局最高分数</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip9.step1">连续消除会获得倍数加成：2x、3x、4x...</li>
+                                        <li data-i18n="tips.tip9.step2">规划连续3-4次消除的组合，分数可以暴涨</li>
+                                        <li data-i18n="tips.tip9.step3">同时消除多行多列也有额外加成</li>
+                                        <li data-i18n="tips.tip9.step4">最理想：连续消除 + 多重消除组合，单次可获得数千分</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧10 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip10.title">10. 节奏控制法</h2>
+                                <span class="tip-level level-intermediate" data-i18n="tips.level.intermediate">中级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip10.scenario">长时间游戏，保持稳定发挥</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip10.step1">不要急于消除，保持棋盘 40-60% 的填充率</li>
+                                        <li data-i18n="tips.tip10.step2">每放置 5-6 个方块后，执行一次消除</li>
+                                        <li data-i18n="tips.tip10.step3">这样可以保持稳定的节奏，避免突然陷入困境</li>
+                                        <li data-i18n="tips.tip10.step4">太早消除浪费机会，太晚消除容易死局</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧11 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip11.title">11. 特殊方块应对指南</h2>
+                                <span class="tip-level level-intermediate" data-i18n="tips.level.intermediate">中级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip11.scenario">遇到难以放置的特殊形状方块</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip11.step1"><strong>Z型/S型：</strong>最难处理，需要预留特定的凹槽空间</li>
+                                        <li data-i18n="tips.tip11.step2"><strong>十字型：</strong>适合放在棋盘中心，可以同时推进四个方向</li>
+                                        <li data-i18n="tips.tip11.step3"><strong>长条型（5格）：</strong>最好用于一次性填满整行或整列</li>
+                                        <li data-i18n="tips.tip11.step4">提前为这些特殊形状预留空间，不要等到拿到才考虑</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 技巧12 -->
+                        <article class="tip-detail">
+                            <div class="tip-header">
+                                <h2 class="tip-title" data-i18n="tips.tip12.title">12. 心态与决策技巧</h2>
+                                <span class="tip-level level-beginner" data-i18n="tips.level.beginner">初级</span>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-scenario">
+                                    <h3 data-i18n="tips.scenario">适用场景</h3>
+                                    <p data-i18n="tips.tip12.scenario">任何时候，特别是面临困难选择时</p>
+                                </div>
+                                <div class="tip-steps">
+                                    <h3 data-i18n="tips.steps">具体操作步骤</h3>
+                                    <ol>
+                                        <li data-i18n="tips.tip12.step1">每次放置前花 3-5 秒思考，不要冲动行事</li>
+                                        <li data-i18n="tips.tip12.step2">如果有多个选择，选择最保守、最安全的那个</li>
+                                        <li data-i18n="tips.tip12.step3">失误后不要慌张，冷静分析如何补救</li>
+                                        <li data-i18n="tips.tip12.step4">记住：Block Blast 是策略游戏，不是速度游戏</li>
+                                        <li data-i18n="tips.tip12.step5">保持耐心，一局游戏可以玩很久，不要急于求成</li>
+                                    </ol>
+                                </div>
+                                <div class="tip-image-placeholder">
+                                    <p data-i18n="tips.imagePlaceholder">📷 示意图占位</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 右侧边栏 -->
+                <aside class="sidebar">
+                    <!-- 广告位 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">广告位</p>
+                        <small data-i18n="ad.note">（AdSense 接入位置）</small>
+                    </div>
+
+                    <!-- 技巧导航 -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title" data-i18n="tips.navigation">技巧导航</h3>
+                        <ul class="tips-nav">
+                            <li><a href="#tip1" data-i18n="tips.tip1.title">棋盘清理的黄金法则</a></li>
+                            <li><a href="#tip2" data-i18n="tips.tip2.title">预留消除空间策略</a></li>
+                            <li><a href="#tip3" data-i18n="tips.tip3.title">大方块优先原则</a></li>
+                            <li><a href="#tip4" data-i18n="tips.tip4.title">连击与多重消除技巧</a></li>
+                            <li><a href="#tip5" data-i18n="tips.tip5.title">方块形状识别与应对</a></li>
+                            <li><a href="#tip6" data-i18n="tips.tip6.title">边角优先填充法</a></li>
+                            <li><a href="#tip7" data-i18n="tips.tip7.title">对称布局策略</a></li>
+                            <li><a href="#tip8" data-i18n="tips.tip8.title">紧急救场技巧</a></li>
+                            <li><a href="#tip9" data-i18n="tips.tip9.title">分数倍增技巧</a></li>
+                            <li><a href="#tip10" data-i18n="tips.tip10.title">节奏控制法</a></li>
+                            <li><a href="#tip11" data-i18n="tips.tip11.title">特殊方块应对指南</a></li>
+                            <li><a href="#tip12" data-i18n="tips.tip12.title">心态与决策技巧</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 广告位2 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">广告位</p>
+                        <small data-i18n="ad.note">（AdSense 接入位置）</small>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.about">关于我们</h4>
+                    <p data-i18n="footer.aboutText">Block Blast 攻略站致力于为全球玩家提供最全面、最实用的游戏攻略和技巧指导。</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">快速链接</h4>
+                    <ul>
+                        <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                        <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                        <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">联系我们</h4>
+                    <p data-i18n="footer.contactText">有问题或建议？欢迎联系我们！</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Block Blast 攻略站 | <span data-i18n="footer.rights">保留所有权利</span></p>
+                <div class="analytics-placeholder">
+                    <small data-i18n="footer.analytics">访客统计（Google Analytics 接入位置）</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

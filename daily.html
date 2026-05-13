@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Block Blast 每日挑战攻略 - 每天更新最新挑战的详细解法和通关技巧">
+    <meta name="keywords" content="Block Blast每日挑战, 每日攻略, 挑战解法">
+    <title>每日挑战 - Block Blast 方块爆破</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 结构化数据 - 面包屑导航 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://你的域名.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "每日挑战",
+            "item": "https://你的域名.com/daily.html"
+        }]
+    }
+    </script>
+
+    <!-- 结构化数据 - 文章 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Block Blast 每日挑战攻略",
+        "description": "每天更新的挑战解法和通关技巧",
+        "author": {
+            "@type": "Organization",
+            "name": "Block Blast 攻略站"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Block Blast 攻略站"
+        },
+        "datePublished": "2026-05-13",
+        "dateModified": "2026-05-13"
+    }
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <h1 class="logo">🎮 Block Blast 攻略</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                <li><a href="daily.html" class="active" data-i18n="nav.daily">每日挑战</a></li>
+                <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                <li><a href="download.html" data-i18n="nav.download">资源下载</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="切换语言">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="daily.pageTitle">📅 每日挑战</h1>
+            <p class="page-subtitle" data-i18n="daily.pageSubtitle">每天更新，助你轻松完成挑战任务</p>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 左侧主内容 -->
+                <div class="main-column">
+                    <!-- 今日挑战 -->
+                    <article class="daily-challenge-card">
+                        <div class="challenge-header">
+                            <div class="challenge-date">
+                                <span class="date-label" data-i18n="daily.today">今日挑战</span>
+                                <h2 class="date-value" id="todayDate">2026年5月13日</h2>
+                            </div>
+                            <div class="challenge-difficulty">
+                                <span class="difficulty-label" data-i18n="daily.difficulty">难度</span>
+                                <span class="difficulty-badge difficulty-hard" data-i18n="daily.hard">困难</span>
+                            </div>
+                        </div>
+
+                        <div class="challenge-content">
+                            <div class="challenge-objective">
+                                <h3 data-i18n="daily.objective">挑战目标</h3>
+                                <p data-i18n="daily.todayObjective">在限定的方块组合下，达到 5000 分以上并保持棋盘至少 50% 的空间</p>
+                            </div>
+
+                            <div class="challenge-solution">
+                                <h3 data-i18n="daily.solution">详细解法</h3>
+                                <div class="solution-steps">
+                                    <div class="step-item">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4 data-i18n="daily.step1.title">开局布局</h4>
+                                            <p data-i18n="daily.step1.desc">首先将第一组方块放置在棋盘的左下角区域。优先使用 L 型方块占据边角，为后续方块预留中心空间。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4 data-i18n="daily.step2.title">建立消除线</h4>
+                                            <p data-i18n="daily.step2.desc">在第 3-4 行建立接近完成的横向消除线。同时在第 2、5 列准备纵向消除。这样可以在关键时刻快速清理空间。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4 data-i18n="daily.step3.title">中期策略</h4>
+                                            <p data-i18n="daily.step3.desc">当棋盘填充到 40-50% 时，开始执行连击消除。优先放置能同时完成多行/列的方块，获得高分加成。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item">
+                                        <div class="step-number">4</div>
+                                        <div class="step-content">
+                                            <h4 data-i18n="daily.step4.title">保持空间</h4>
+                                            <p data-i18n="daily.step4.desc">达到 5000 分后，重点转向保持棋盘空间。避免填充中心区域，将新方块尽量放在已有方块的周围，形成紧凑布局。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item">
+                                        <div class="step-number">5</div>
+                                        <div class="step-content">
+                                            <h4 data-i18n="daily.step5.title">完成挑战</h4>
+                                            <p data-i18n="daily.step5.desc">最后阶段，每次放置前都要计算剩余空间。确保至少保留 32 个空格（50%），同时维持分数在 5000 以上即可完成挑战。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="challenge-tips">
+                                <h3 data-i18n="daily.keyTips">关键技巧</h3>
+                                <ul>
+                                    <li data-i18n="daily.tip1">不要急于消除，保持 2-3 条接近完成的行/列作为"安全阀"</li>
+                                    <li data-i18n="daily.tip2">优先使用大方块，小方块留到最后填补缝隙</li>
+                                    <li data-i18n="daily.tip3">注意方块形状，L 型和 T 型最适合边角布局</li>
+                                    <li data-i18n="daily.tip4">达到目标分数后，转为防守策略，避免冒险</li>
+                                </ul>
+                            </div>
+
+                            <div class="challenge-image-placeholder">
+                                <p data-i18n="daily.imagePlaceholder">📷 解法示意图占位</p>
+                            </div>
+                        </div>
+
+                        <!-- 评论区占位 -->
+                        <div class="comments-section">
+                            <h3 data-i18n="daily.comments">玩家评论</h3>
+                            <div class="comments-placeholder">
+                                <p data-i18n="daily.commentsPlaceholder">评论功能即将上线...</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 历史挑战 -->
+                    <section class="history-challenges">
+                        <h2 class="section-title" data-i18n="daily.history">历史挑战</h2>
+                        <div class="history-list">
+                            <div class="history-item">
+                                <div class="history-date">
+                                    <span class="date">2026-05-12</span>
+                                    <span class="difficulty-badge difficulty-medium" data-i18n="daily.medium">中等</span>
+                                </div>
+                                <h4 class="history-title" data-i18n="daily.history1">达到 3000 分并消除 10 次以上</h4>
+                                <a href="#" class="history-link" data-i18n="daily.viewSolution">查看解法 →</a>
+                            </div>
+
+                            <div class="history-item">
+                                <div class="history-date">
+                                    <span class="date">2026-05-11</span>
+                                    <span class="difficulty-badge difficulty-easy" data-i18n="daily.easy">简单</span>
+                                </div>
+                                <h4 class="history-title" data-i18n="daily.history2">在 20 步内达到 2000 分</h4>
+                                <a href="#" class="history-link" data-i18n="daily.viewSolution">查看解法 →</a>
+                            </div>
+
+                            <div class="history-item">
+                                <div class="history-date">
+                                    <span class="date">2026-05-10</span>
+                                    <span class="difficulty-badge difficulty-hard" data-i18n="daily.hard">困难</span>
+                                </div>
+                                <h4 class="history-title" data-i18n="daily.history3">完成 5 次连击消除</h4>
+                                <a href="#" class="history-link" data-i18n="daily.viewSolution">查看解法 →</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- 右侧边栏 -->
+                <aside class="sidebar">
+                    <!-- 广告位 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">广告位</p>
+                        <small data-i18n="ad.note">（AdSense 接入位置）</small>
+                    </div>
+
+                    <!-- 挑战统计 -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title" data-i18n="daily.stats">挑战统计</h3>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="daily.totalChallenges">总挑战数</span>
+                                <span class="stat-value">143</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="daily.thisWeek">本周挑战</span>
+                                <span class="stat-value">7</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="daily.avgDifficulty">平均难度</span>
+                                <span class="stat-value" data-i18n="daily.medium">中等</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 广告位2 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">广告位</p>
+                        <small data-i18n="ad.note">（AdSense 接入位置）</small>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.about">关于我们</h4>
+                    <p data-i18n="footer.aboutText">Block Blast 攻略站致力于为全球玩家提供最全面、最实用的游戏攻略和技巧指导。</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">快速链接</h4>
+                    <ul>
+                        <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                        <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                        <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">联系我们</h4>
+                    <p data-i18n="footer.contactText">有问题或建议？欢迎联系我们！</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Block Blast 攻略站 | <span data-i18n="footer.rights">保留所有权利</span></p>
+                <div class="analytics-placeholder">
+                    <small data-i18n="footer.analytics">访客统计（Google Analytics 接入位置）</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/daily.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

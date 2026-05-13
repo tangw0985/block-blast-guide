@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Block Blast 关卡攻略 - 按难度分级的详细通关指南，帮你突破每个难关">
+    <meta name="keywords" content="Block Blast关卡, 通关攻略, 关卡指南">
+    <title>关卡攻略 - Block Blast 方块爆破</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 结构化数据 - 面包屑导航 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://你的域名.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "关卡攻略",
+            "item": "https://你的域名.com/levels.html"
+        }]
+    }
+    </script>
+
+    <!-- 结构化数据 - 游戏指南 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Block Blast",
+        "description": "方块消除益智游戏",
+        "gamePlatform": ["iOS", "Android"],
+        "genre": "益智游戏"
+    }
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <h1 class="logo">🎮 Block Blast 攻略</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                <li><a href="levels.html" class="active" data-i18n="nav.levels">关卡攻略</a></li>
+                <li><a href="download.html" data-i18n="nav.download">资源下载</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="切换语言">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="levels.pageTitle">🎯 关卡攻略</h1>
+            <p class="page-subtitle" data-i18n="levels.pageSubtitle">按难度分级，逐步提升你的游戏技能</p>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 左侧主内容 -->
+                <div class="main-column">
+                    <!-- 难度筛选 -->
+                    <div class="level-filters">
+                        <button class="filter-btn active" data-filter="all" data-i18n="levels.all">全部</button>
+                        <button class="filter-btn" data-filter="easy" data-i18n="levels.easy">简单</button>
+                        <button class="filter-btn" data-filter="medium" data-i18n="levels.medium">中等</button>
+                        <button class="filter-btn" data-filter="hard" data-i18n="levels.hard">困难</button>
+                    </div>
+
+                    <!-- 关卡列表 -->
+                    <div class="levels-container">
+                        <!-- 关卡1 -->
+                        <article class="level-card" data-difficulty="easy">
+                            <div class="level-header">
+                                <div class="level-info">
+                                    <h3 class="level-title" data-i18n="levels.level1.title">关卡 1-10：新手入门</h3>
+                                    <span class="difficulty-badge difficulty-easy" data-i18n="levels.easy">简单</span>
+                                </div>
+                                <button class="level-toggle" aria-label="展开/收起">
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                            </div>
+                            <div class="level-content">
+                                <div class="level-objective">
+                                    <h4 data-i18n="levels.targetScore">目标分数</h4>
+                                    <p class="score-value">1,000 - 2,000 分</p>
+                                </div>
+                                <div class="level-strategy">
+                                    <h4 data-i18n="levels.strategy">推荐策略</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level1.strategy1">这些关卡主要帮助玩家熟悉基本操作和方块形状</li>
+                                        <li data-i18n="levels.level1.strategy2">不需要复杂策略，按照直觉放置方块即可</li>
+                                        <li data-i18n="levels.level1.strategy3">重点练习如何填满行和列来消除方块</li>
+                                        <li data-i18n="levels.level1.strategy4">建议用这些关卡熟悉不同方块的形状和特点</li>
+                                    </ul>
+                                </div>
+                                <div class="level-mistakes">
+                                    <h4 data-i18n="levels.commonMistakes">常见错误</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level1.mistake1">过于随意放置，导致棋盘布局混乱</li>
+                                        <li data-i18n="levels.level1.mistake2">忽视边角位置，造成难以填充的死角</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 关卡2 -->
+                        <article class="level-card" data-difficulty="easy">
+                            <div class="level-header">
+                                <div class="level-info">
+                                    <h3 class="level-title" data-i18n="levels.level2.title">关卡 11-25：基础进阶</h3>
+                                    <span class="difficulty-badge difficulty-easy" data-i18n="levels.easy">简单</span>
+                                </div>
+                                <button class="level-toggle" aria-label="展开/收起">
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                            </div>
+                            <div class="level-content">
+                                <div class="level-objective">
+                                    <h4 data-i18n="levels.targetScore">目标分数</h4>
+                                    <p class="score-value">2,000 - 3,500 分</p>
+                                </div>
+                                <div class="level-strategy">
+                                    <h4 data-i18n="levels.strategy">推荐策略</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level2.strategy1">开始注意棋盘的整体布局，保持平整</li>
+                                        <li data-i18n="levels.level2.strategy2">尝试同时准备 2 条接近完成的行或列</li>
+                                        <li data-i18n="levels.level2.strategy3">优先使用大方块，小方块用于填补缝隙</li>
+                                        <li data-i18n="levels.level2.strategy4">学习识别不同方块形状的最佳放置位置</li>
+                                    </ul>
+                                </div>
+                                <div class="level-mistakes">
+                                    <h4 data-i18n="levels.commonMistakes">常见错误</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level2.mistake1">急于消除，没有规划后续步骤</li>
+                                        <li data-i18n="levels.level2.mistake2">忽视方块形状特点，放置位置不合理</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 关卡3 -->
+                        <article class="level-card" data-difficulty="medium">
+                            <div class="level-header">
+                                <div class="level-info">
+                                    <h3 class="level-title" data-i18n="levels.level3.title">关卡 26-50：中级挑战</h3>
+                                    <span class="difficulty-badge difficulty-medium" data-i18n="levels.medium">中等</span>
+                                </div>
+                                <button class="level-toggle" aria-label="展开/收起">
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                            </div>
+                            <div class="level-content">
+                                <div class="level-objective">
+                                    <h4 data-i18n="levels.targetScore">目标分数</h4>
+                                    <p class="score-value">3,500 - 6,000 分</p>
+                                </div>
+                                <div class="level-strategy">
+                                    <h4 data-i18n="levels.strategy">推荐策略</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level3.strategy1">必须掌握"预留消除空间"策略，保持 2-3 条备用消除线</li>
+                                        <li data-i18n="levels.level3.strategy2">开始追求连击和多重消除，提高得分效率</li>
+                                        <li data-i18n="levels.level3.strategy3">注意棋盘的可持续性，避免形成难以处理的布局</li>
+                                        <li data-i18n="levels.level3.strategy4">每次放置前思考 2-3 步，规划后续方块的位置</li>
+                                    </ul>
+                                </div>
+                                <div class="level-mistakes">
+                                    <h4 data-i18n="levels.commonMistakes">常见错误</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level3.mistake1">只关注当前方块，没有为后续方块预留空间</li>
+                                        <li data-i18n="levels.level3.mistake2">棋盘布局不平衡，出现"高山低谷"</li>
+                                        <li data-i18n="levels.level3.mistake3">过早填满中心区域，限制了后续操作空间</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 关卡4 -->
+                        <article class="level-card" data-difficulty="medium">
+                            <div class="level-header">
+                                <div class="level-info">
+                                    <h3 class="level-title" data-i18n="levels.level4.title">关卡 51-75：高级进阶</h3>
+                                    <span class="difficulty-badge difficulty-medium" data-i18n="levels.medium">中等</span>
+                                </div>
+                                <button class="level-toggle" aria-label="展开/收起">
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                            </div>
+                            <div class="level-content">
+                                <div class="level-objective">
+                                    <h4 data-i18n="levels.targetScore">目标分数</h4>
+                                    <p class="score-value">6,000 - 10,000 分</p>
+                                </div>
+                                <div class="level-strategy">
+                                    <h4 data-i18n="levels.strategy">推荐策略</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level4.strategy1">精通连击技巧，争取每次放置都能消除 2+ 行/列</li>
+                                        <li data-i18n="levels.level4.strategy2">深度规划，提前 3-5 步预判方块放置位置</li>
+                                        <li data-i18n="levels.level4.strategy3">灵活运用不同方块形状的特点，最大化空间利用</li>
+                                        <li data-i18n="levels.level4.strategy4">保持棋盘至少 30-40% 的空间，确保有足够的操作余地</li>
+                                    </ul>
+                                </div>
+                                <div class="level-mistakes">
+                                    <h4 data-i18n="levels.commonMistakes">常见错误</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level4.mistake1">过于激进，追求高分而忽视棋盘可持续性</li>
+                                        <li data-i18n="levels.level4.mistake2">没有备用方案，一旦出现不利方块就束手无策</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 关卡5 -->
+                        <article class="level-card" data-difficulty="hard">
+                            <div class="level-header">
+                                <div class="level-info">
+                                    <h3 class="level-title" data-i18n="levels.level5.title">关卡 76-100+：大师级</h3>
+                                    <span class="difficulty-badge difficulty-hard" data-i18n="levels.hard">困难</span>
+                                </div>
+                                <button class="level-toggle" aria-label="展开/收起">
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                            </div>
+                            <div class="level-content">
+                                <div class="level-objective">
+                                    <h4 data-i18n="levels.targetScore">目标分数</h4>
+                                    <p class="score-value">10,000+ 分</p>
+                                </div>
+                                <div class="level-strategy">
+                                    <h4 data-i18n="levels.strategy">推荐策略</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level5.strategy1">每一步都要深思熟虑，任何失误都可能导致游戏结束</li>
+                                        <li data-i18n="levels.level5.strategy2">始终保持至少 3 个可以快速消除的备选方案</li>
+                                        <li data-i18n="levels.level5.strategy3">追求完美的连击组合，单次消除 3-4 行/列</li>
+                                        <li data-i18n="levels.level5.strategy4">棋盘布局要极度紧凑，但又要保留足够的灵活性</li>
+                                        <li data-i18n="levels.level5.strategy5">需要对所有方块形状了如指掌，瞬间判断最佳位置</li>
+                                    </ul>
+                                </div>
+                                <div class="level-mistakes">
+                                    <h4 data-i18n="levels.commonMistakes">常见错误</h4>
+                                    <ul>
+                                        <li data-i18n="levels.level5.mistake1">心态急躁，在关键时刻做出错误决策</li>
+                                        <li data-i18n="levels.level5.mistake2">过度依赖某种策略，缺乏应变能力</li>
+                                        <li data-i18n="levels.level5.mistake3">忽视小概率事件，没有为最坏情况做准备</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 右侧边栏 -->
+                <aside class="sidebar">
+                    <!-- 广告位 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">广告位</p>
+                        <small data-i18n="ad.note">（AdSense 接入位置）</small>
+                    </div>
+
+                    <!-- 关卡统计 -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title" data-i18n="levels.stats">关卡统计</h3>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="levels.totalLevels">总关卡数</span>
+                                <span class="stat-value">100+</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="levels.easyCount">简单关卡</span>
+                                <span class="stat-value">25</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="levels.mediumCount">中等关卡</span>
+                                <span class="stat-value">50</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-i18n="levels.hardCount">困难关卡</span>
+                                <span class="stat-value">25+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 广告位2 -->
+                    <div class="ad-placeholder">
+                        <p data-i18n="ad.placeholder">广告位</p>
+                        <small data-i18n="ad.note">（AdSense 接入位置）</small>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.about">关于我们</h4>
+                    <p data-i18n="footer.aboutText">Block Blast 攻略站致力于为全球玩家提供最全面、最实用的游戏攻略和技巧指导。</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">快速链接</h4>
+                    <ul>
+                        <li><a href="tips.html" data-i18n="nav.tips">技巧攻略</a></li>
+                        <li><a href="daily.html" data-i18n="nav.daily">每日挑战</a></li>
+                        <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">联系我们</h4>
+                    <p data-i18n="footer.contactText">有问题或建议？欢迎联系我们！</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Block Blast 攻略站 | <span data-i18n="footer.rights">保留所有权利</span></p>
+                <div class="analytics-placeholder">
+                    <small data-i18n="footer.analytics">访客统计（Google Analytics 接入位置）</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
