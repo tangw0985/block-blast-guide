@@ -911,6 +911,17 @@ body {
     font-size: 1.1rem;
 }
 
+.tip-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    display: block;
+}
+
 .tips-nav {
     list-style: none;
 }
