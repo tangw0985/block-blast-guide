@@ -429,6 +429,8 @@
                         <h2 class="section-title">常见问题</h2>
                         <div class="faq-list" id="tipsFaqList"></div>
                     </section>
+
+                    <section id="interactionSection" aria-label="攻略互动区"></section>
                 </div>
 
                 <!-- 右侧边栏 -->
@@ -501,6 +503,7 @@
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/strategy-card.js"></script>
+    <script src="js/interaction-section.js"></script>
     <script>
         const tipsFaqItems = [
             {
@@ -520,6 +523,20 @@
                 answer: '只需要在 tipsFaqItems 数组中继续添加包含 question 和 answer 字段的对象，页面内容和 FAQPage 结构化数据会自动同步更新。'
             }
         ];
+
+        const interactionConfig = {
+            container: '#interactionSection',
+            storageKey: 'blockBlastTipsUsefulVotes',
+            giscus: {
+                repo: '',
+                repoId: '',
+                category: '',
+                categoryId: '',
+                mapping: 'pathname',
+                theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light',
+                lang: 'zh-CN'
+            }
+        };
 
         function renderTipsFaq(items) {
             const faqList = document.getElementById('tipsFaqList');
@@ -588,6 +605,7 @@
             ]);
             renderTipsFaq(tipsFaqItems);
             injectTipsFaqSchema(tipsFaqItems);
+            new InteractionSection(interactionConfig).mount();
         });
     </script>
 </body>

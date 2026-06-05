@@ -973,6 +973,92 @@ body {
     }
 }
 
+.interaction-section {
+    margin-top: 2rem;
+}
+
+.interaction-vote-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.interaction-vote-content {
+    min-width: 0;
+}
+
+.useful-vote-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.useful-vote-button:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+.useful-vote-button[aria-pressed="true"] {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.vote-count {
+    min-width: 1.5rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.interaction-comments-card {
+    margin-top: 1.5rem;
+}
+
+.giscus-container {
+    min-height: 120px;
+    padding: 1.25rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 10px;
+    background: var(--bg-secondary);
+    color: var(--text-tertiary);
+}
+
+.giscus-container .giscus,
+.giscus-container iframe {
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .interaction-vote-card {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .useful-vote-button {
+        width: 100%;
+    }
+
+    .giscus-container {
+        padding: 1rem;
+    }
+}
+
 /* ==========================================
    每日挑战页面样式
    ========================================== */
