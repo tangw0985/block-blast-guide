@@ -2012,3 +2012,189 @@ body {
         min-height: 200px;
     }
 }
+/* ==========================================
+   StrategyCard 组件样式
+   ========================================== */
+.strategy-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.strategy-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-3px);
+}
+
+/* 媒体容器 */
+.sc-media-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sc-video,
+.sc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.strategy-card:hover .sc-video,
+.strategy-card:hover .sc-img {
+    transform: scale(1.03);
+}
+
+/* 悬浮图标层 */
+.sc-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.sc-media-wrap:hover .sc-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sc-play-icon {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+    transition: transform 0.2s ease;
+}
+
+.sc-media-wrap:hover .sc-play-icon {
+    transform: scale(1.15);
+}
+
+.sc-overlay-label {
+    margin-top: 0.5rem;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+/* 文字区 */
+.sc-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.sc-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.sc-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.sc-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: var(--primary-color);
+    color: #fff;
+    white-space: nowrap;
+}
+
+.sc-desc {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* 策略卡片网格 */
+.strategy-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Lightbox */
+#sc-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+#sc-lightbox.sc-lb-open {
+    display: flex;
+}
+
+.sc-lb-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+}
+
+.sc-lb-content {
+    position: relative;
+    z-index: 1;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.sc-lb-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 8px;
+    display: block;
+}
+
+.sc-lb-close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+    .strategy-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sc-play-icon {
+        font-size: 2.25rem;
+    }
+
+    .sc-body {
+        padding: 1rem 1.1rem 1.25rem;
+    }
+
+    .sc-title {
+        font-size: 1rem;
+    }
+}

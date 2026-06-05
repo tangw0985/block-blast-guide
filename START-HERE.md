@@ -134,10 +134,10 @@ git --version
 
 ```bash
 # 配置用户名（替换为你的 GitHub 用户名）
-git config --global user.name "你的GitHub用户名"
+git config --global user.name "tangw0985"
 
 # 配置邮箱（替换为你的 GitHub 邮箱）
-git config --global user.email "你的邮箱@example.com"
+git config --global user.email "tangw0985@fingard.com"
 ```
 
 #### 4. 创建 GitHub 仓库
@@ -171,7 +171,7 @@ git add .
 git commit -m "Initial commit: Block Blast 攻略网站 v2.0.0"
 
 # 5. 添加远程仓库（⚠️ 替换为你的仓库地址）
-git remote add origin https://github.com/你的用户名/block-blast-guide.git
+git remote add origin https://github.com/tangw0985/block-blast-guide.git
 
 # 6. 重命名分支为 main
 git branch -M main
@@ -210,7 +210,7 @@ git push -u origin main
 
 **完成！** 你的网站地址是：
 ```
-https://你的GitHub用户名.github.io/block-blast-guide/
+https://tangw0985.github.io/block-blast-guide/
 ```
 
 #### 7. 绑定自定义域名（如果你买了域名）
