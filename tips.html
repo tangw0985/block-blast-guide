@@ -424,6 +424,11 @@
                             <!-- StrategyCard 组件将由 JS 动态渲染到此处 -->
                         </div>
                     </section>
+
+                    <section class="faq-section content-card" id="tips-faq">
+                        <h2 class="section-title">常见问题</h2>
+                        <div class="faq-list" id="tipsFaqList"></div>
+                    </section>
                 </div>
 
                 <!-- 右侧边栏 -->
@@ -497,9 +502,68 @@
     <script src="js/main.js"></script>
     <script src="js/strategy-card.js"></script>
     <script>
-        // StrategyCard 示例初始化
+        const tipsFaqItems = [
+            {
+                question: 'Block Blast 攻略适合新手吗？',
+                answer: '适合。攻略页面按初级、中级、高级整理技巧，新手可以先学习棋盘清理、边角填充和大方块优先放置等基础策略。'
+            },
+            {
+                question: '如何在 Block Blast 中获得更高分？',
+                answer: '想获得更高分，需要优先保持棋盘空间，提前预留可消除的行列，并尽量规划连续消除或多重消除来触发分数加成。'
+            },
+            {
+                question: '什么时候应该优先清理棋盘？',
+                answer: '当棋盘填充率较高、可放置区域变少，或者已经有行列只差一两个格子即可消除时，应优先清理棋盘，为后续方块保留空间。'
+            },
+            {
+                question: '后续如何添加更多常见问答？',
+                answer: '只需要在 tipsFaqItems 数组中继续添加包含 question 和 answer 字段的对象，页面内容和 FAQPage 结构化数据会自动同步更新。'
+            }
+        ];
+
+        function renderTipsFaq(items) {
+            const faqList = document.getElementById('tipsFaqList');
+            if (!faqList) return;
+
+            faqList.textContent = '';
+            items.forEach(item => {
+                const faqItem = document.createElement('div');
+                faqItem.className = 'faq-item';
+
+                const question = document.createElement('h3');
+                question.textContent = item.question;
+
+                const answer = document.createElement('p');
+                answer.textContent = item.answer;
+
+                faqItem.append(question, answer);
+                faqList.appendChild(faqItem);
+            });
+        }
+
+        function injectTipsFaqSchema(items) {
+            const schema = {
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: items.map(item => ({
+                    '@type': 'Question',
+                    name: item.question,
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: item.answer
+                    }
+                }))
+            };
+
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.id = 'tips-faq-schema';
+            script.textContent = JSON.stringify(schema);
+            document.head.appendChild(script);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
-            renderStrategyCards('#strategy-cards-demo', [
+            renderStrategyCards('#strategyCardsContainer', [
                 {
                     title: '连击消除演示',
                     description: '通过预留关键位置，一次性触发多行连击，分数成倍增加。观看下方演示了解最佳放置时机。',
@@ -522,6 +586,8 @@
                     badge: '中级'
                 }
             ]);
+            renderTipsFaq(tipsFaqItems);
+            injectTipsFaqSchema(tipsFaqItems);
         });
     </script>
 </body>
