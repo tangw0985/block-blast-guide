@@ -25,12 +25,12 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Block Blast 攻略站",
-        "url": "https://你的域名.com",
+        "url": "https://blockblastgui.com",
         "description": "Block Blast 方块爆破游戏的完整攻略指南，提供技巧、每日挑战、关卡攻略和下载资源",
         "inLanguage": "zh-CN",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://你的域名.com/search?q={search_term_string}",
+            "target": "https://blockblastgui.com/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     }
@@ -42,8 +42,8 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Block Blast 攻略站",
-        "url": "https://你的域名.com",
-        "logo": "https://你的域名.com/images/logo.png",
+        "url": "https://blockblastgui.com",
+        "logo": "https://blockblastgui.com/images/logo.png",
         "description": "专注于 Block Blast 游戏攻略的专业网站"
     }
     </script>
@@ -57,7 +57,7 @@
             "@type": "ListItem",
             "position": 1,
             "name": "首页",
-            "item": "https://你的域名.com"
+            "item": "https://blockblastgui.com"
         }]
     }
     </script>
@@ -103,10 +103,10 @@
         </div>
 
         <div class="container">
-            <h2 class="hero-title" data-i18n="hero.title">Block Blast! 方块爆破</h2>
-            <p class="hero-subtitle" data-i18n="hero.subtitle">掌握技巧，冲击高分榜！最全面的攻略指南</p>
+            <h2 class="hero-title" data-i18n="hero.title">Block Blast 高分攻略实验室</h2>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">用棋盘步骤、方块落点和实战复盘，学会每一局该怎么下</p>
             <div class="hero-buttons">
-                <a href="tips.html" class="btn btn-primary" data-i18n="hero.startLearning">开始学习</a>
+                <a href="tips.html" class="btn btn-primary" data-i18n="hero.startLearning">查看实战技巧</a>
                 <a href="download.html"
                    class="btn btn-secondary"
                    data-affiliate="homepage-download"
@@ -114,44 +114,7 @@
                    data-i18n="hero.downloadGame">下载游戏</a>
             </div>
 
-            <!-- 中央展示棋盘动画 -->
-            <div class="hero-showcase">
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled"></div>
-                <div class="hero-cell filled"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled-2"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell"></div>
-
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled-3"></div>
-                <div class="hero-cell filled-3"></div>
-                <div class="hero-cell filled-2"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled-4"></div>
-
-                <div class="hero-cell filled-4"></div>
-                <div class="hero-cell filled-4"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled-3"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled"></div>
-                <div class="hero-cell filled-4"></div>
-
-                <div class="hero-cell"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled-2"></div>
-                <div class="hero-cell filled-2"></div>
-                <div class="hero-cell"></div>
-                <div class="hero-cell filled"></div>
-                <div class="hero-cell filled"></div>
-                <div class="hero-cell"></div>
-            </div>
+            <div class="hero-lab" id="homeBoardDemo" aria-label="Block Blast 首页实战棋盘演示"></div>
         </div>
     </section>
 
@@ -212,33 +175,33 @@
                         <div class="guide-list">
                             <article class="guide-item">
                                 <div class="guide-meta">
-                                    <span class="guide-date">2026-05-13</span>
+                                    <span class="guide-date">2026-06-10</span>
                                     <span class="guide-tag tag-advanced" data-i18n="tags.advanced">进阶</span>
                                 </div>
                                 <h3 class="guide-title">
-                                    <a href="tips.html" data-i18n="latest.article1">棋盘清理的黄金法则：如何避免死角</a>
+                                    <a href="daily.html" data-i18n="latest.article1">6月10日每日训练：右下角双线消除</a>
                                 </h3>
-                                <p class="guide-excerpt" data-i18n="latest.excerpt1">掌握这个技巧，让你的棋盘始终保持最佳状态，避免因布局不当导致游戏提前结束...</p>
+                                <p class="guide-excerpt" data-i18n="latest.excerpt1">用单格触发横竖双清，并在清线后保留中心大块空间。</p>
                             </article>
                             <article class="guide-item">
                                 <div class="guide-meta">
-                                    <span class="guide-date">2026-05-12</span>
+                                    <span class="guide-date">2026-06-09</span>
                                     <span class="guide-tag tag-daily" data-i18n="tags.daily">每日挑战</span>
                                 </div>
                                 <h3 class="guide-title">
-                                    <a href="daily.html" data-i18n="latest.article2">5月12日每日挑战完美通关攻略</a>
+                                    <a href="tips.html#tip4" data-i18n="latest.article2">连击与多重消除：如何找交叉点</a>
                                 </h3>
-                                <p class="guide-excerpt" data-i18n="latest.excerpt2">今日挑战难度较高，本文提供详细的步骤解析和关键技巧...</p>
+                                <p class="guide-excerpt" data-i18n="latest.excerpt2">通过可点击棋盘演示，理解为什么一个小块能换来两条线。</p>
                             </article>
                             <article class="guide-item">
                                 <div class="guide-meta">
-                                    <span class="guide-date">2026-05-11</span>
+                                    <span class="guide-date">2026-06-08</span>
                                     <span class="guide-tag tag-beginner" data-i18n="tags.beginner">入门</span>
                                 </div>
                                 <h3 class="guide-title">
-                                    <a href="tips.html" data-i18n="latest.article3">新手必看：Block Blast 基础操作指南</a>
+                                    <a href="tips.html#tip1" data-i18n="latest.article3">新手必看：先把棋盘压平</a>
                                 </h3>
-                                <p class="guide-excerpt" data-i18n="latest.excerpt3">刚开始玩 Block Blast？这篇文章将帮助你快速了解游戏的基本规则和操作...</p>
+                                <p class="guide-excerpt" data-i18n="latest.excerpt3">从边角、锯齿和安全线开始，减少最常见的死局。</p>
                             </article>
                         </div>
                     </section>
@@ -334,7 +297,13 @@
 
     <script src="js/i18n.js"></script>
     <script src="js/affiliate.js"></script>
+    <script src="js/board-demo.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new BlockBlastBoardDemo('#homeBoardDemo', BlockBlastDemoPresets.homepage).mount();
+        });
+    </script>
 	
 	<p style="text-align:center; font-size:12px; color:gray;">v2.0.1 测试发布</p>
 </body>

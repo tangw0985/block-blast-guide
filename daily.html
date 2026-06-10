@@ -17,12 +17,12 @@
             "@type": "ListItem",
             "position": 1,
             "name": "首页",
-            "item": "https://你的域名.com"
+            "item": "https://blockblastgui.com"
         }, {
             "@type": "ListItem",
             "position": 2,
             "name": "每日挑战",
-            "item": "https://你的域名.com/daily.html"
+            "item": "https://blockblastgui.com/daily.html"
         }]
     }
     </script>
@@ -108,6 +108,8 @@
                                 <p data-i18n="daily.todayObjective">在限定的方块组合下，达到 5000 分以上并保持棋盘至少 50% 的空间</p>
                             </div>
 
+                            <div id="dailyBoardDemo" aria-label="每日挑战步骤棋盘演示"></div>
+
                             <div class="challenge-solution">
                                 <h3 data-i18n="daily.solution">详细解法</h3>
                                 <div class="solution-steps">
@@ -163,14 +165,14 @@
                                 </ul>
                             </div>
 
-                            <img class="tip-image" src="images/daily/2026-05-13-solution.png" alt="每日挑战解法示意图" loading="lazy">
+                            <img class="tip-image" src="images/daily/2026-05-13-solution.png" alt="每日挑战历史解法示意图" loading="lazy">
                         </div>
 
                         <!-- 评论区占位 -->
                         <div class="comments-section">
                             <h3 data-i18n="daily.comments">玩家评论</h3>
                             <div class="comments-placeholder">
-                                <p data-i18n="daily.commentsPlaceholder">评论功能即将上线...</p>
+                                <p data-i18n="daily.commentsPlaceholder">欢迎在后续接入评论系统后补充你的走法和分数截图。</p>
                             </div>
                         </div>
                     </article>
@@ -185,7 +187,7 @@
                                     <span class="difficulty-badge difficulty-medium" data-i18n="daily.medium">中等</span>
                                 </div>
                                 <h4 class="history-title" data-i18n="daily.history1">达到 3000 分并消除 10 次以上</h4>
-                                <a href="#" class="history-link" data-i18n="daily.viewSolution">查看解法 →</a>
+                                <a href="daily.html?date=2026-05-12" class="history-link" data-i18n="daily.viewSolution">查看解法</a>
                             </div>
 
                             <div class="history-item">
@@ -194,7 +196,7 @@
                                     <span class="difficulty-badge difficulty-easy" data-i18n="daily.easy">简单</span>
                                 </div>
                                 <h4 class="history-title" data-i18n="daily.history2">在 20 步内达到 2000 分</h4>
-                                <a href="#" class="history-link" data-i18n="daily.viewSolution">查看解法 →</a>
+                                <a href="daily.html?date=2026-05-11" class="history-link" data-i18n="daily.viewSolution">查看解法</a>
                             </div>
 
                             <div class="history-item">
@@ -203,7 +205,7 @@
                                     <span class="difficulty-badge difficulty-hard" data-i18n="daily.hard">困难</span>
                                 </div>
                                 <h4 class="history-title" data-i18n="daily.history3">完成 5 次连击消除</h4>
-                                <a href="#" class="history-link" data-i18n="daily.viewSolution">查看解法 →</a>
+                                <a href="daily.html?date=2026-05-10" class="history-link" data-i18n="daily.viewSolution">查看解法</a>
                             </div>
                         </div>
                     </section>
@@ -277,6 +279,7 @@
     </footer>
 
     <script src="js/i18n.js"></script>
+    <script src="js/board-demo.js"></script>
     <script src="js/daily.js"></script>
     <script src="js/main.js"></script>
 </body>

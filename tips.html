@@ -17,12 +17,12 @@
             "@type": "ListItem",
             "position": 1,
             "name": "首页",
-            "item": "https://你的域名.com"
+            "item": "https://blockblastgui.com"
         }, {
             "@type": "ListItem",
             "position": 2,
             "name": "技巧攻略",
-            "item": "https://你的域名.com/tips.html"
+            "item": "https://blockblastgui.com/tips.html"
         }]
     }
     </script>
@@ -102,7 +102,7 @@
                     <!-- 技巧列表 -->
                     <div class="tips-container">
                         <!-- 技巧1 -->
-                        <article class="tip-detail">
+                        <article class="tip-detail" id="tip1">
                             <div class="tip-header">
                                 <h2 class="tip-title" data-i18n="tips.tip1.title">1. 棋盘清理的黄金法则</h2>
                                 <span class="tip-level level-beginner" data-i18n="tips.level.beginner">初级</span>
@@ -121,12 +121,13 @@
                                         <li data-i18n="tips.tip1.step4">不要让任何一行或一列的空格数超过3个，否则难以填满</li>
                                     </ol>
                                 </div>
+                                <div id="tipCleanupDemo" aria-label="棋盘清理步骤演示"></div>
                                 <img class="tip-image" src="images/tips/tip-01-board-cleanup.png" alt="棋盘清理示意图：保持平整布局与优先填角" loading="lazy">
                             </div>
                         </article>
 
                         <!-- 技巧2 -->
-                        <article class="tip-detail">
+                        <article class="tip-detail" id="tip2">
                             <div class="tip-header">
                                 <h2 class="tip-title" data-i18n="tips.tip2.title">2. 预留消除空间策略</h2>
                                 <span class="tip-level level-intermediate" data-i18n="tips.level.intermediate">中级</span>
@@ -145,12 +146,13 @@
                                         <li data-i18n="tips.tip2.step4">这个策略可以有效延长游戏时间，避免提前结束</li>
                                     </ol>
                                 </div>
+                                <div id="tipReserveDemo" aria-label="预留消除空间步骤演示"></div>
                                 <img class="tip-image" src="images/tips/tip-02-reserve-space.png" alt="预留消除空间策略示意图" loading="lazy">
                             </div>
                         </article>
 
                         <!-- 技巧3 -->
-                        <article class="tip-detail">
+                        <article class="tip-detail" id="tip3">
                             <div class="tip-header">
                                 <h2 class="tip-title" data-i18n="tips.tip3.title">3. 大方块优先原则</h2>
                                 <span class="tip-level level-beginner" data-i18n="tips.level.beginner">初级</span>
@@ -169,12 +171,13 @@
                                         <li data-i18n="tips.tip3.step4">如果大方块无法放置，说明棋盘布局有问题，需要调整策略</li>
                                     </ol>
                                 </div>
+                                <div id="tipBigBlockDemo" aria-label="大方块优先步骤演示"></div>
                                 <img class="tip-image" src="images/tips/tip-03-big-block-first.png" alt="大方块优先原则示意图" loading="lazy">
                             </div>
                         </article>
 
                         <!-- 技巧4 -->
-                        <article class="tip-detail">
+                        <article class="tip-detail" id="tip4">
                             <div class="tip-header">
                                 <h2 class="tip-title" data-i18n="tips.tip4.title">4. 连击与多重消除技巧</h2>
                                 <span class="tip-level level-advanced" data-i18n="tips.level.advanced">高级</span>
@@ -193,6 +196,7 @@
                                         <li data-i18n="tips.tip4.step4">最理想的情况是一次放置消除2-3行/列，分数暴涨</li>
                                     </ol>
                                 </div>
+                                <div id="tipComboDemo" aria-label="连击与多重消除步骤演示"></div>
                                 <img class="tip-image" src="images/tips/tip-04-combo-clear.png" alt="连击与多重消除技巧示意图" loading="lazy">
                             </div>
                         </article>
@@ -478,6 +482,7 @@
 
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/board-demo.js"></script>
     <script src="js/strategy-card.js"></script>
     <script src="js/interaction-section.js"></script>
     <script>
@@ -560,6 +565,10 @@
         }
 
         document.addEventListener('DOMContentLoaded', function() {
+            new BlockBlastBoardDemo('#tipCleanupDemo', BlockBlastDemoPresets.cleanup).mount();
+            new BlockBlastBoardDemo('#tipReserveDemo', BlockBlastDemoPresets.reserve).mount();
+            new BlockBlastBoardDemo('#tipBigBlockDemo', Object.assign({}, BlockBlastDemoPresets.homepage, { compact: true })).mount();
+            new BlockBlastBoardDemo('#tipComboDemo', BlockBlastDemoPresets.combo).mount();
             renderStrategyCards('#strategyCardsContainer', [
                 {
                     title: '连击消除演示',

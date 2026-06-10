@@ -118,25 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ==========================================
-// 语言切换（简化版，暂时只显示按钮）
-// ==========================================
-const langToggle = document.getElementById('langToggle');
-const langText = document.querySelector('.lang-text');
-
-if (langToggle) {
-    langToggle.addEventListener('click', () => {
-        // 暂时只是切换按钮文字，实际国际化功能可以后续添加
-        const currentLang = langText.textContent;
-        if (currentLang === 'EN') {
-            langText.textContent = '中文';
-            alert('English version coming soon! 英文版即将推出！');
-        } else {
-            langText.textContent = 'EN';
-        }
-    });
-}
-
-// ==========================================
 // 控制台输出
 // ==========================================
 console.log('🎮 Block Blast 攻略网站已加载完成！');

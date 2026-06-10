@@ -17,12 +17,12 @@
             "@type": "ListItem",
             "position": 1,
             "name": "首页",
-            "item": "https://你的域名.com"
+            "item": "https://blockblastgui.com"
         }, {
             "@type": "ListItem",
             "position": 2,
             "name": "资源下载",
-            "item": "https://你的域名.com/download.html"
+            "item": "https://blockblastgui.com/download.html"
         }]
     }
     </script>
@@ -91,7 +91,7 @@
                 <!-- 左侧主内容 -->
                 <div class="main-column">
                     <!-- 官方下载 -->
-                    <section class="download-section">
+                    <section class="download-section" id="official-download">
                         <h2 class="section-title" data-i18n="download.official">🎮 官方游戏下载</h2>
                         <div class="download-cards">
                             <div class="download-card featured">
@@ -109,8 +109,10 @@
                                         <strong data-i18n="download.rating">评分：</strong> ⭐⭐⭐⭐⭐ 4.8
                                     </span>
                                 </div>
-                                <a href="#"
+                                <a href="https://apps.apple.com/search?term=Block%20Blast"
                                    class="btn btn-primary btn-download"
+                                   target="_blank"
+                                   rel="noopener"
                                    data-affiliate="app-store"
                                    data-affiliate-name="Block Blast iOS"
                                    data-i18n="download.appStore">
@@ -133,8 +135,10 @@
                                         <strong data-i18n="download.rating">评分：</strong> ⭐⭐⭐⭐⭐ 4.7
                                     </span>
                                 </div>
-                                <a href="#"
+                                <a href="https://play.google.com/store/search?q=Block%20Blast&c=apps"
                                    class="btn btn-primary btn-download"
+                                   target="_blank"
+                                   rel="noopener"
                                    data-affiliate="google-play"
                                    data-affiliate-name="Block Blast Android"
                                    data-i18n="download.googlePlay">
@@ -168,7 +172,7 @@
                     </section>
 
                     <!-- 游戏加速器推荐 -->
-                    <section class="tools-section">
+                    <section class="tools-section" id="accelerator-notes">
                         <h2 class="section-title" data-i18n="download.accelerator">🚀 游戏加速器推荐</h2>
                         <p class="section-description" data-i18n="download.acceleratorDesc">
                             如果你在某些地区遇到网络连接问题，可以尝试使用以下游戏加速器
@@ -184,7 +188,7 @@
                                     <span class="feature-tag">✓ <span data-i18n="download.freeTrialTag">免费试用</span></span>
                                     <span class="feature-tag">✓ <span data-i18n="download.multiPlatformTag">多平台支持</span></span>
                                 </div>
-                                <a href="#"
+                                <a href="download.html#download-faq"
                                    class="btn btn-secondary"
                                    data-affiliate="accelerator-a"
                                    data-affiliate-name="加速器 A"
@@ -200,7 +204,7 @@
                                     <span class="feature-tag">✓ <span data-i18n="download.affordableTag">价格实惠</span></span>
                                     <span class="feature-tag">✓ <span data-i18n="download.stableTag">连接稳定</span></span>
                                 </div>
-                                <a href="#"
+                                <a href="download.html#download-faq"
                                    class="btn btn-secondary"
                                    data-affiliate="accelerator-b"
                                    data-affiliate-name="加速器 B"
@@ -219,7 +223,7 @@
                                     <h4 data-i18n="download.scoreTracker">分数追踪器</h4>
                                     <p data-i18n="download.scoreTrackerDesc">记录你的游戏分数，分析进步趋势</p>
                                 </div>
-                                <a href="#" class="tool-link" data-i18n="download.comingSoon">即将推出</a>
+                                <a href="tips.html" class="tool-link">先看技巧</a>
                             </div>
 
                             <div class="related-tool-item">
@@ -228,7 +232,7 @@
                                     <h4 data-i18n="download.strategySimulator">策略模拟器</h4>
                                     <p data-i18n="download.strategySimulatorDesc">在线模拟棋盘布局，练习高级策略</p>
                                 </div>
-                                <a href="#" class="tool-link" data-i18n="download.comingSoon">即将推出</a>
+                                <a href="daily.html" class="tool-link">查看演示</a>
                             </div>
 
                             <div class="related-tool-item">
@@ -237,13 +241,13 @@
                                     <h4 data-i18n="download.communityApp">社区 App</h4>
                                     <p data-i18n="download.communityAppDesc">与全球玩家交流，分享攻略心得</p>
                                 </div>
-                                <a href="#" class="tool-link" data-i18n="download.comingSoon">即将推出</a>
+                                <a href="levels.html" class="tool-link">查看关卡</a>
                             </div>
                         </div>
                     </section>
 
                     <!-- FAQ -->
-                    <section class="faq-section">
+                    <section class="faq-section" id="download-faq">
                         <h2 class="section-title" data-i18n="download.faq">❓ 常见问题</h2>
                         <div class="faq-list">
                             <div class="faq-item">

@@ -11,9 +11,9 @@ const translations = {
         'nav.download': '资源下载',
 
         // Hero 区域
-        'hero.title': 'Block Blast! 方块爆破',
-        'hero.subtitle': '掌握技巧，冲击高分榜！最全面的攻略指南',
-        'hero.startLearning': '开始学习',
+        'hero.title': 'Block Blast 高分攻略实验室',
+        'hero.subtitle': '用棋盘步骤、方块落点和实战复盘，学会每一局该怎么下',
+        'hero.startLearning': '查看实战技巧',
         'hero.downloadGame': '下载游戏',
 
         // 侧边栏
@@ -55,7 +55,7 @@ const translations = {
         'daily.solution': '解法步骤',
         'daily.tips': '提示与技巧',
         'daily.comments': '玩家评论',
-        'daily.commentsPlaceholder': '评论功能即将上线，敬请期待！',
+        'daily.commentsPlaceholder': '欢迎在后续接入评论系统后补充你的走法和分数截图。',
         'daily.history': '历史挑战',
 
         // 关卡攻略页面
@@ -107,9 +107,9 @@ const translations = {
         'nav.download': 'Download',
 
         // Hero Section
-        'hero.title': 'Block Blast! Guide',
-        'hero.subtitle': 'Master the skills and climb the leaderboard! Complete strategy guide',
-        'hero.startLearning': 'Start Learning',
+        'hero.title': 'Block Blast Strategy Lab',
+        'hero.subtitle': 'Learn every move with board steps, piece placement, and practical replays',
+        'hero.startLearning': 'View Practical Tips',
         'hero.downloadGame': 'Download Game',
 
         // Sidebar
@@ -151,7 +151,7 @@ const translations = {
         'daily.solution': 'Solution Steps',
         'daily.tips': 'Tips & Tricks',
         'daily.comments': 'Player Comments',
-        'daily.commentsPlaceholder': 'Comments feature coming soon!',
+        'daily.commentsPlaceholder': 'Player move ideas and score screenshots can be added after comments are connected.',
         'daily.history': 'Challenge History',
 
         // Levels Page

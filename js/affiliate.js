@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', initAffiliateLinks);
 在 HTML 中使用方式：
 
 1. App Store 下载链接：
-<a href="#"
+<a href="https://apps.apple.com/search?term=Block%20Blast"
    data-affiliate="app-store"
    data-affiliate-name="Block Blast iOS"
    class="btn btn-primary">
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', initAffiliateLinks);
 </a>
 
 2. Google Play 下载链接：
-<a href="#"
+<a href="https://play.google.com/store/search?q=Block%20Blast&c=apps"
    data-affiliate="google-play"
    data-affiliate-name="Block Blast Android"
    class="btn btn-primary">
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', initAffiliateLinks);
 </a>
 
 3. 加速器推荐链接：
-<a href="#"
+<a href="download.html#download-faq"
    data-affiliate="accelerator-a"
    data-affiliate-name="加速器 A"
    class="btn btn-secondary">
