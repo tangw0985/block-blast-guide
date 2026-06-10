@@ -417,9 +417,6 @@
                         <small data-i18n="ad.note">（AdSense 接入位置）</small>
                     </div>
 
-                    <!-- 分类导航 CategoryNav -->
-                    <div id="categoryNavContainer" class="sidebar-widget"></div>
-
                     <!-- 技巧导航 -->
                     <div class="sidebar-widget">
                         <h3 class="widget-title" data-i18n="tips.navigation">技巧导航</h3>
@@ -483,7 +480,6 @@
     <script src="js/main.js"></script>
     <script src="js/strategy-card.js"></script>
     <script src="js/interaction-section.js"></script>
-    <script src="js/category-nav.js"></script>
     <script>
         const tipsFaqItems = [
             {
@@ -590,14 +586,6 @@
             renderTipsFaq(tipsFaqItems);
             injectTipsFaqSchema(tipsFaqItems);
             new InteractionSection(interactionConfig).mount();
-
-            // CategoryNav: 分类导航 + 文章分类标签
-            applyTipCategoryTags();
-            new CategoryNav({
-                container: '#categoryNavContainer',
-                mode: 'sidebar',
-                onFilter: filterTipsByCategory
-            }).mount();
         });
     </script>
 </body>
