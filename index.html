@@ -18,6 +18,9 @@
 
     <title>Block Blast 方块爆破 - 游戏攻略网站</title>
     <link rel="canonical" href="https://blockblastgui.com/">
+    <link rel="alternate" hreflang="zh-CN" href="https://blockblastgui.com/">
+    <link rel="alternate" hreflang="en" href="https://blockblastgui.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://blockblastgui.com/en/">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- 结构化数据 - 网站信息 -->
@@ -84,13 +87,11 @@
                 <li><a href="levels.html" data-i18n="nav.levels">关卡攻略</a></li>
                 <li><a href="download.html" data-i18n="nav.download">资源下载</a></li>
             </ul>
-            <div class="nav-controls">
+            <div class="nav-controls"><a class="lang-toggle" href="en/" aria-label="English version">EN</a>
                 <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
                     <span class="theme-icon">🌙</span>
                 </button>
-                <button class="lang-toggle" id="langToggle" aria-label="切换语言">
-                    <span class="lang-text">EN</span>
-                </button>
+
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
                     <span class="hamburger"></span>
                 </button>
@@ -297,7 +298,7 @@
             new BlockBlastBoardDemo('#homeBoardDemo', BlockBlastDemoPresets.homepage).mount();
         });
     </script>
-	
+
 	<p style="text-align:center; font-size:12px; color:gray;">v2.0.1 测试发布</p>
 </body>
 </html>
