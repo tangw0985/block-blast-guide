@@ -12,7 +12,7 @@ function collectHtmlFiles(directory, files = []) {
         const fullPath = path.join(directory, entry.name);
         if (entry.isDirectory()) {
             collectHtmlFiles(fullPath, files);
-        } else if (entry.name.endsWith('.html')) {
+        } else if (entry.name.endsWith('.html') && !entry.name.startsWith('google')) {
             files.push(fullPath);
         }
     }
